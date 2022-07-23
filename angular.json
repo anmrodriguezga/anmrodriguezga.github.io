@@ -10,6 +10,15 @@
       "sourceRoot": "src",
       "prefix": "app",
       "architect": {
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "outputPath": "root",
+            "baseHref": "https://anmrodriguezga.github.io/",
+            "name": "anmrodriguezga",
+            "email": "anmrodriguezga@unal.edu.co"
+          }
+        },
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
